@@ -11,5 +11,6 @@ const cookieOptions = {
 };
 
 export function withApiSession(fn: any) {
+  console.log('withSession ing~')
   return withIronSessionApiRoute(fn, cookieOptions);
 }

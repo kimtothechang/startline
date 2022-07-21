@@ -15,6 +15,7 @@ interface ConfigType {
 
 export default function withHandler({ methods, handler, isPrivate = true }: ConfigType) {
   return async function (req: NextApiRequest, res: NextApiResponse): Promise<any> {
+    console.log('withHandler ing~')
     if (req.method && !methods.includes(req.method as any)) {
       return res.status(405).end();
     }
