@@ -30,7 +30,7 @@ async function handler(
 
   console.log(user);
 
-  res.status(200).json({ name: 'newLogin', user })
+  res.status(200).json({ name: 'newlogin api success', user })
 }
 
 export default handler;
