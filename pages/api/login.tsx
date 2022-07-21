@@ -11,7 +11,7 @@ async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
   const { email, pw } = req.body;
   const errorMessage = '아이디 혹은 비밀번호를 확인해주세요.';
 
-  const existUser = await client?.user.findUnique({
+  const existUser = await client.user.findUnique({
     where: {
       email,
     },
