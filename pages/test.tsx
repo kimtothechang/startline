@@ -11,7 +11,7 @@ interface LoginForm {
     pw:string;
 }
 
-const NewLogin:NextPage = () => {
+const Test:NextPage = () => {
     const {register, handleSubmit} = useForm<LoginForm>();
     const [login , {data, loading, error}] = useMutation('/api/newlogin');
 
@@ -32,7 +32,7 @@ const NewLogin:NextPage = () => {
     
 }
 
-export default NewLogin;
+export default Test;
 
 const Input = styled.input`
   border:1px solid black;
