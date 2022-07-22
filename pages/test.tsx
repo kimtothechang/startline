@@ -13,7 +13,7 @@ interface LoginForm {
 
 const Test:NextPage = () => {
     const {register, handleSubmit} = useForm<LoginForm>();
-    const [login , {data, loading, error}] = useMutation('/api/newlogin');
+    const [login , {data, loading, error}] = useMutation('/api/test');
 
     const onValid =(valuse:LoginForm) =>{
         console.log(valuse);

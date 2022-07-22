@@ -146,7 +146,7 @@ const Join: NextPage = () => {
               pattern: /^[a-zA-Z0-9+-\_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
             })}
           />
-          <EmailButton onClick={() => verifyEmail(watch('email'))}>Send Code</EmailButton>
+          <EmailButton type="button" onClick={() => verifyEmail(watch('email'))}>Send Code</EmailButton>
         </EmailWRapper>
         <ErrorText>{errors?.email}</ErrorText>
         {/* <Input
